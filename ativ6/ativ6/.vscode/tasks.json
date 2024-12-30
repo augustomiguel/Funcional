@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "mix",
+			"task": "Run tests",
+			"problemMatcher": [
+				"$mixCompileError",
+				"$mixCompileWarning",
+				"$mixTestFailure"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "mix: Run tests"
+		},
+		{
+			"type": "mix",
+			"task": "Run tests with coverage",
+			"problemMatcher": [
+				"$mixCompileError",
+				"$mixCompileWarning",
+				"$mixTestFailure"
+			],
+			"group": "test",
+			"label": "mix: Run tests with coverage"
+		}
+	]
+}
